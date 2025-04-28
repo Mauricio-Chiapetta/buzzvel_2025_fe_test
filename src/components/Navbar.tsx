@@ -35,7 +35,8 @@ export function Navbar() {
             </Link>
             <Link
               href={"#"}
-              className="border-3 text-blue font-medium py-2 px-4 border-blue rounded-md"
+              className="border-[2px] text-blue font-medium py-2 px-4 border-blue rounded-[8px] hover:bg-blue hover:text-white transition-colors duration-300"
+              
             >
               Sign Up Now
             </Link>
