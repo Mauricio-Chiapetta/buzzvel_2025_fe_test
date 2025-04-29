@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
-  weight:["400", "500", "700"],
+  weight:["400", "500", "700","800"],
 });
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} antialiased`}>{children}</body>
+      <body className={`${roboto.variable} antialiased sm:px-[80px] px-[16px]`}>{children}</body>
     </html>
   );
 }
