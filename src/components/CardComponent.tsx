@@ -1,4 +1,4 @@
-import { Button, Card } from "@mui/material";
+import { Button } from "@mui/material";
 import React from "react";
 
 interface CardComponentProps {
@@ -19,10 +19,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({
   };
 
   return (
-    <Card
-      className="shadow-sm py-6 px-4 lg:w-[200px] flex flex-col items-start bg-white space-y-2"
-      variant="elevation"
-    >
+    <div className="shadow-xl py-6 px-4 lg:w-[200px] flex flex-col items-start bg-white space-y-2 rounded-xl">
       <span
         className={`text-sm font-semibold px-3 py-1 rounded-sm ${badgeColors[badge]}`}
       >
@@ -35,6 +32,6 @@ export const CardComponent: React.FC<CardComponentProps> = ({
       <div className="flex flex-col gap-2 w-full">
         <Button variant="outlined">Take Lesson</Button>
       </div>
-    </Card>
+    </div>
   );
 };

@@ -5,7 +5,7 @@ import { ChevronDown, Menu } from "lucide-react";
 
 export function Navbar() {
   return (
-    <div className="bg-white">
+    <div className="bg-white sm:px-[80px] px-[16px]">
       <div>
         <div className="py-[24px] flex items-center justify-between">
           <div className="flex items-center gap-[48px]">
