@@ -77,7 +77,7 @@ export function AllInOneApp() {
             className="absolute  max-w-[506px] h-[448px] z-10 right-129 -bottom-30"
           />
 
-          <div className="flex flex-col gap-4 sm:flex-row justify-center items-center lg:absolute bottom-10 top-10 right-0 lg:z-10 z-0">
+          <div className="flex flex-col gap-4 sm:flex-row justify-center items-center lg:absolute bottom-10 top-10 right-0 lg:z-10 z-0 mb-8">
             <CardComponent
               title="The map of mathematics"
               subtitle="Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."

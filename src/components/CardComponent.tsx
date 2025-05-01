@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 interface CardComponentProps {
@@ -29,8 +30,11 @@ export const CardComponent: React.FC<CardComponentProps> = ({
         {title}
       </h3>
       <p className="text-sm text-gray-600 leading-[140%]">{subtitle}</p>
-      <div className="flex flex-col gap-2 w-full">
-        <Button variant="outlined">Take Lesson</Button>
+
+      <div className="w-full">
+        <Link href={"/#"} className="flex flex-col gap-2 w-full">
+          <Button variant="outlined">Take Lesson</Button>
+        </Link>
       </div>
     </div>
   );
