@@ -7,7 +7,7 @@ export function MeetStudents() {
   return (
     <div className="sm:px-[80px] lg:px-[16px] px-4 py-12">
       <section className="flex gap-20 items-center">
-        <div className=" w-full lg:w-[1440px] lg:h-[811px] h-auto flex items-center justify-center">
+        <div className=" w-full lg:h-[811px] h-auto flex items-center justify-center">
           <div className="flex gap-4 lg:flex-row flex-col-reverse">
             {/* its better to use grid layout and use the pictures */}
             <Image

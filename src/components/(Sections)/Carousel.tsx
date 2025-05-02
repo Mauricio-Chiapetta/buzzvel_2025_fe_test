@@ -7,17 +7,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { SliderContainer } from "../SliderContainer";
+import { SliderContainer } from "../CarouselContainer";
 export function Slider() {
   return (
-    <div className="bg-yellow sm:px-[80px] px-[16px] lg:py-0 py-12 relative max-w-[1440px] ">
+    <div className="bg-yellow sm:px-[80px] px-[16px] lg:py-0 py-12 relative">
       <div className="absolute left-5 top-1/2 z-10 -translate-y-1/2 cursor-pointer swiper-button-prev-custom hidden lg:block">
         <ChevronLeft size={48} className="text-white hover:text-grayBlue" />
       </div>
       <div className="absolute right-5 top-1/2 z-10 -translate-y-1/2 cursor-pointer swiper-button-next-custom hidden lg:block">
         <ChevronRight size={48} className="text-white hover:text-grayBlue" />
       </div>
-      <section className="flex items-center justify-center lg:max-w-[1440px] lg:h-[500px] max-w-[393px] max-h-[684px]">
+      <section className="flex items-center justify-center lg:h-[500px]  max-h-[684px]">
         <Swiper
           modules={[Navigation]}
           navigation={{

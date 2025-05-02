@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <div className="sm:px-[80px] px-[16px]">
       <section className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-between">
-        <div className="w-full lg:w-[1440px] h-auto lg:h-[704.53px] py-10 lg:py-20">
+        <div className="w-full  h-auto lg:h-[704.53px] py-10 lg:py-20">
           <div className="h-auto lg:h-[524px] w-full lg:w-[575.39px] relative">
             <h1 className="text-grayBlue text-[40px] md:text-[36px] lg:text-[72px]/[110%] font-bold relative mb-6 lg:mb-8">
               <span className="relative inline-block">
