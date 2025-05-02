@@ -7,7 +7,7 @@ interface SliderContainerProps {
   company: string;
   //   imageUrl: string;
 }
-export function SliderContainer(props: SliderContainerProps) {
+export function SliderContainer (props: SliderContainerProps) {
   return (
     <div className="flex items-center w-full h-full flex-col lg:flex-row justify-between">
       <div className="lg:w-[528px] lg:max-h-[325px] w-[361px] max-h-[262px] ">

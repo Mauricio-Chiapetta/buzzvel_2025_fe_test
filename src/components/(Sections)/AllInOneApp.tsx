@@ -5,7 +5,7 @@ import icons from "@/assets/icons/Icons.png";
 import blobImage from "@/assets/images/Blob.png";
 import Link from "next/link";
 import desktopImage from "@/assets/images/Desktop.png";
-import { CardComponent } from "./CardComponent";
+import { CardComponent } from "../CardComponent";
 export function AllInOneApp() {
   return (
     <div className="sm:px-[80px] px-[16px]">
@@ -20,11 +20,11 @@ export function AllInOneApp() {
                   <Image
                     src={vector}
                     alt="Vector"
-                    className="absolute bottom-0 left-22 translate-y-[45%] -z-10"
+                    className="absolute bottom-0 lg:left-22 lg:translate-y-[45%] -z-10 translate-y-[10%] left-10 lg:w-[260px] w-[100px]"
                     width={260}
                   />
                 </span>
-              </span>
+              </span>{" "}
               that makes it easier
             </h1>
 

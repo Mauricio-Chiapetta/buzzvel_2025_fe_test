@@ -7,8 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { SliderContainer } from "./SliderContainer";
-// REPONSIVE DESIGN !!
+import { SliderContainer } from "../SliderContainer";
 export function Slider() {
   return (
     <div className="bg-yellow sm:px-[80px] px-[16px] lg:py-0 py-12 relative max-w-[1440px] ">
