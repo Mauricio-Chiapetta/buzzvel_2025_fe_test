@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Picture from "@/assets/images/CompletePicture.png";
+import Picture from "@/app/assets/images/CompletePicture.png";
 
 interface SliderContainerProps {
   paragraph: string;
@@ -7,7 +7,7 @@ interface SliderContainerProps {
   company: string;
   //   imageUrl: string;
 }
-export function SliderContainer (props: SliderContainerProps) {
+export function CarouselContainer (props: SliderContainerProps) {
   return (
     <div className="flex items-center w-full h-full flex-col lg:flex-row justify-between">
       <div className="lg:w-[528px] lg:max-h-[325px] w-[361px] max-h-[262px] ">
@@ -17,6 +17,7 @@ export function SliderContainer (props: SliderContainerProps) {
             <p>{props.name}</p>
             <p className="font-bold">{props.company}</p>
           </div>
+        
         </div>
       </div>
       <div className="lg:w-[528px] w-[361px]">

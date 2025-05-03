@@ -12,3 +12,10 @@
     --color-green-100:#DCFCE7;
     --color-green:#166534;   
 }
+
+.swiper-pagination-bullet-custom {
+    @apply w-2 h-2 rounded-full bg-white duration-200;
+  }
+  .swiper-pagination-bullet-custom-active {
+    @apply w-8 bg-grayBlue;
+  }

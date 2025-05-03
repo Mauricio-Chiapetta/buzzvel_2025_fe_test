@@ -1,14 +1,14 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import MeetStudentsPicture from "@/assets/images/internationalStudentsCollum.png";
+import MeetStudentsPicture from "@/app/assets/images/internationalStudentsCollum.png";
 import { PlaneTakeoff } from "lucide-react";
 export function MeetStudents() {
   return (
     <div className="sm:px-[80px] lg:px-[16px] px-4 py-12">
       <section className="flex gap-20 items-center">
         <div className=" w-full lg:h-[811px] h-auto flex items-center justify-center">
-          <div className="flex gap-4 lg:flex-row flex-col-reverse">
+          <div className="flex gap-10 lg:flex-row flex-col-reverse">
             {/* its better to use grid layout and use the pictures */}
             <Image
               src={MeetStudentsPicture}

@@ -1,10 +1,10 @@
 import { Check, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import vector from "@/assets/images/Vector-14.png";
-import icons from "@/assets/icons/Icons.png";
-import blobImage from "@/assets/images/Blob.png";
+import vector from "@/app/assets/images/Vector-14.png";
+import icons from "@/app/assets/icons/Icons.png";
+import blobImage from "@/app/assets/images/Blob.png";
 import Link from "next/link";
-import desktopImage from "@/assets/images/Desktop.png";
+import desktopImage from "@/app/assets/images/Desktop.png";
 import { CardComponent } from "../CardComponent";
 export function AllInOneApp() {
   return (

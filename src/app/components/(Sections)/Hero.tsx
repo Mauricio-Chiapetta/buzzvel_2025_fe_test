@@ -1,13 +1,13 @@
-import vector from "@/assets/images/Vector-14.png";
+import vector from "@/app/assets/images/Vector-14.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CirclePlay } from "lucide-react";
-import icon01 from "@/assets/icons/heroIcon01.png";
-import icon02 from "@/assets/icons/heroIcon02.png";
-import icon03 from "@/assets/icons/heroIcon03.png";
-import icon04 from "@/assets/icons/heroIcon04.png";
-import icon05 from "@/assets/icons/heroIcon05.png";
-import teacherAndStudent from "@/assets/images/theacherAndStudent.png";
+import icon01 from "@/app/assets/icons/heroIcon01.png";
+import icon02 from "@/app/assets/icons/heroIcon02.png";
+import icon03 from "@/app/assets/icons/heroIcon03.png";
+import icon04 from "@/app/assets/icons/heroIcon04.png";
+import icon05 from "@/app/assets/icons/heroIcon05.png";
+import teacherAndStudent from "@/app/assets/images/theacherAndStudent.png";
 
 export function Hero() {
   return (
