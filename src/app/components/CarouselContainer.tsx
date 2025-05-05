@@ -5,7 +5,6 @@ interface SliderContainerProps {
   paragraph: string;
   name: string;
   company: string;
-  //   imageUrl: string;
 }
 export function CarouselContainer (props: SliderContainerProps) {
   return (

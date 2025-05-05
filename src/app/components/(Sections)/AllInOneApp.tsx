@@ -6,6 +6,7 @@ import blobImage from "@/app/assets/images/Blob.png";
 import Link from "next/link";
 import desktopImage from "@/app/assets/images/Desktop.png";
 import { CardComponent } from "../CardComponent";
+import { LinkButton } from "../Link-Button";
 export function AllInOneApp() {
   return (
     <div className="sm:px-[80px] px-[16px]">
@@ -45,12 +46,9 @@ export function AllInOneApp() {
               </p>
             </div>
 
-            <Link href={"#"}>
-              <h3 className="text-blue flex gap-3 font-semibold text-[16px] lg:text-[20px] items-center cursor-pointer hover:text-blue/80 transition-all duration-300 ease-in-out">
-                Find more about the app
-                <ArrowRight />
-              </h3>
-            </Link>
+           <LinkButton>
+           Find more about the app
+           </LinkButton>
           </div>
         </div>
 
@@ -58,7 +56,7 @@ export function AllInOneApp() {
           <Image
             src={blobImage}
             alt="Blob background"
-            className="absolute lg:max-w-[506px] lg:h-[448px] -z-10  lg:right-40 right-20 bottom-120 lg:-bottom-35 blur-md"
+            className="absolute lg:max-w-[506px] lg:h-[448px] -z-10  lg:right-40 right-20 bottom-120 lg:-bottom-35 blur-3xl"
           />
           <Image
             src={icons}

@@ -30,13 +30,11 @@ export const CardComponent: React.FC<CardComponentProps> = ({
       </h3>
       <p className="text-sm text-gray-600 leading-[140%]">{subtitle}</p>
 
-      
-
-        <Link href={"/#"} className="flex flex-col gap-2 w-full items-center">
-          <span className="border-blue rounded-lg text-blue border-2 py-2 px-3 w-full text-center font-semibold hover:bg-blue/20 duration-300 transition-all">Take Lesson</span>
-        </Link>
-      
-      
+      <Link href={"/#"} className="flex flex-col gap-2 w-full items-center">
+        <button className="border-blue rounded-lg text-blue border-2 py-2 px-3 w-full text-center font-semibold hover:bg-blue/20 duration-300 transition-all cursor-pointer">
+          Take Lesson
+        </button>
+      </Link>
     </div>
   );
 };

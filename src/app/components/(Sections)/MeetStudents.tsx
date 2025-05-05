@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MeetStudentsPicture from "@/app/assets/images/internationalStudentsCollum.png";
 import { PlaneTakeoff } from "lucide-react";
+import { LinkButton } from "../Link-Button";
 export function MeetStudents() {
   return (
     <div className="sm:px-[80px] lg:px-[16px] px-4 py-12">
@@ -32,12 +33,9 @@ export function MeetStudents() {
                 urna, faucibus aenean lorem faucibus integer.
               </p>
 
-              <Link href={"#"}>
-                <h3 className="text-blue flex gap-3 font-semibold text-[16px] lg:text-[20px] items-center cursor-pointer hover:text-blue/80 transition-all duration-300 ease-in-out">
-                  Explore teachers and students
-                  <ArrowRight />
-                </h3>
-              </Link>
+             <LinkButton>
+             Explore teachers and students
+             </LinkButton>
             </div>
           </div>
         </div>

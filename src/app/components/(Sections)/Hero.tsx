@@ -8,6 +8,7 @@ import icon03 from "@/app/assets/icons/heroIcon03.png";
 import icon04 from "@/app/assets/icons/heroIcon04.png";
 import icon05 from "@/app/assets/icons/heroIcon05.png";
 import teacherAndStudent from "@/app/assets/images/theacherAndStudent.png";
+import { Button } from "../Button";
 
 export function Hero() {
   return (
@@ -33,14 +34,7 @@ export function Hero() {
               pellentesque turpis ultricies.
             </p>
             <div className="flex items-center gap-4 lg:gap-8 mb-6 lg:mb-8">
-              <Link
-                href={"#"}
-                className="bg-orange font-semibold rounded-lg hover:bg-orange/80 transition-all duration-300 ease-in-out w-[153px] lg:w-[239px] h-[64px] flex items-center justify-center"
-              >
-                <span className="text-lg lg:text-2xl tracking-tight text-white">
-                  Sign Up Now
-                </span>
-              </Link>
+              <Button variant="orange">Sign Up Now</Button>
               <Link href={"#"}>
                 <h3 className="text-blue flex gap-3 font-semibold text-[16px] lg:text-[20px] items-center cursor-pointer hover:text-blue/80 transition-all duration-300 ease-in-out">
                   <CirclePlay />

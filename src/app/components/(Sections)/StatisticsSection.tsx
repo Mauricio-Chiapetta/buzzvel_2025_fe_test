@@ -1,10 +1,11 @@
 "use client";
+import React from "react";
 import { IoHeartCircle, IoDiamond } from "react-icons/io5";
 import { RiGraduationCapFill } from "react-icons/ri";
 import CountUp from "react-countup";
 export function StatisticsSection() {
   return (
-    <section className="bg-grayBlue flex justify-center items-center p-20">
+    <section className="bg-grayBlue flex justify-center items-center p-20 w-full">
       <div className="flex items-center gap-20 lg:flex-row flex-col w-[1280px] justify-around">
         <div className="flex flex-col items-center text-yellow gap-4 justify-center">
           <IoHeartCircle size={64} className="text-yellow" />

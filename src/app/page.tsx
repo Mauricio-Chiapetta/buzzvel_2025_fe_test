@@ -6,6 +6,7 @@ import { MeetStudents } from "@/app/components/(Sections)/MeetStudents";
 import { StatisticsSection } from "@/app/components/(Sections)/StatisticsSection";
 import { Depoiments } from "./components/(Sections)/Depoiments";
 import { Features } from "./components/(Sections)/Features";
+import { Join } from "./components/(Sections)/Join";
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <StatisticsSection/>
       <Depoiments/>
       <Features/>
+      <Join/>
     </>
   );
 }
