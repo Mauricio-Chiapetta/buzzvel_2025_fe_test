@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { CircleArrowRight, CircleArrowLeft } from "lucide-react";
 import { DepoimentCard } from "../DepoimentCard";
 import { depoimentData } from "../data";
+
 export function Depoiments() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -25,18 +26,18 @@ export function Depoiments() {
         <div className="lg:flex gap-6 hidden">
           <CircleArrowLeft
             size={48}
-            className="text-orange cursor-pointer"
+            className="text-orange cursor-pointer hover:text-orange/90 duration-300 transition-all"
             onClick={() => scroll("left")}
           />
           <CircleArrowRight
             size={48}
-            className="text-orange cursor-pointer"
+            className="text-orange cursor-pointer hover:text-orange/90 durantion-300 transition-all"
             onClick={() => scroll("right")}
           />
         </div>
       </div>
 
-      <div ref={scrollRef} className="flex gap-6 lg:overflow-x-hidden overflow-x-auto px-4 py-12 lg:px-0 lg:py-0">
+      <div ref={scrollRef} className="flex gap-6 lg:overflow-x-hidden overflow-x-auto px-4 py-12 lg:px-0 lg:py-3">
         {depoimentData.map((item) => (
           <DepoimentCard
             id={item.id}

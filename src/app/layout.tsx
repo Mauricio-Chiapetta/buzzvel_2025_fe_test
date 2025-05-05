@@ -3,14 +3,14 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Buzzvel | Frontend test",
+  title: "Uteach | Home",
   description: "Buzzvel frontEnd test 2025",
 };
 
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
-  weight:["400", "500", "700","800"],
+  weight: ["400", "500", "700", "800"],
 });
 
 export default function RootLayout({
@@ -24,4 +24,3 @@ export default function RootLayout({
     </html>
   );
 }
-// sm:px-[80px] px-[16px]

@@ -58,12 +58,12 @@ export function AllInOneApp() {
           <Image
             src={blobImage}
             alt="Blob background"
-            className="absolute lg:max-w-[506px] lg:h-[448px] -z-10  lg:right-40 right-20 bottom-120 lg:-bottom-35"
+            className="absolute lg:max-w-[506px] lg:h-[448px] -z-10  lg:right-40 right-20 bottom-120 lg:-bottom-35 blur-md"
           />
           <Image
             src={icons}
             alt="Icons"
-            className="absolute max-w-[506px] h-[448px] z-10 right-129 -bottom-30 hidden lg:block"
+            className="absolute max-w-[506px] h-[448px] z-10 right-129 -bottom-30"
           />
 
           <Image
