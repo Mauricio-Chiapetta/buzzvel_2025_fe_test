@@ -13,7 +13,7 @@ export function Button({
 }: ButtonProps) {
   const variants = {
     orange: "bg-orange hover:bg-orange/80",
-    blue: "bg-grayBlue hover:bg-grayBlue/80",
+    blue: "bg-grayBlue hover:bg-grayBlue/90",
   };
   return (
     <button

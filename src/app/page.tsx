@@ -7,6 +7,7 @@ import { StatisticsSection } from "@/app/components/(Sections)/StatisticsSection
 import { Depoiments } from "./components/(Sections)/Depoiments";
 import { Features } from "./components/(Sections)/Features";
 import { Join } from "./components/(Sections)/Join";
+import { CTA } from "./components/(Sections)/CTA";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
       <Depoiments/>
       <Features/>
       <Join/>
+      <CTA/>
     </>
   );
 }

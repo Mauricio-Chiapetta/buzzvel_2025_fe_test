@@ -1,7 +1,5 @@
 import vector from "@/app/assets/images/Vector-14.png";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import picture01 from "@/app/assets/images/Picture01.png";
 import picture02 from "@/app/assets/images/Picture02.png";
 import picture03 from "@/app/assets/images/Picture03.png";
@@ -13,8 +11,8 @@ import { LinkButton } from "../Link-Button";
 
 export function Features() {
   return (
-    <section className="lg:p-20 lg:gap-20 gap-16 flex max-h-[639px] px-4 py-12 justify-center lg:flex-row flex-col">
-      <div className="flex flex-col lg:w-[600px] lg:gap-8 gap-6">
+    <section className="lg:p-20 gap-20 flex h-[639px] px-4 justify-center lg:flex-row flex-col">
+      <div className="flex flex-col lg:w-[600px] lg:gap-8 gap-6 w-[361px]">
         <h1 className="lg:text-[56px] text-2xl text-grayBlue font-bold leading-[110%]">
           All the cool{" "}
           <span className="relative inline-block">
@@ -37,9 +35,9 @@ export function Features() {
         <LinkButton>View all the features</LinkButton>
       </div>
 
-      <div className="lg:w-[600px] w-[361px] lg:h-[479px] lg:mt-0 mt-16">
+      <div className="lg:w-[534px] w-[361px] lg:h-[522px] h-[421px]">
         <div className="relative w-full">
-          <div className="absolute z-30 -bottom-40 lg:left-10 left-13 w-[70%] lg:w-[60%]">
+          <div className="absolute z-30 lg:-bottom-40 lg:left-10 left-13 w-[70%] lg:w-[60%] -bottom-45">
             <CardComponent
               badge="Popular"
               subtitle="Aliquam ut euismod condimentum elementum ultricies volutpat sit non. "
@@ -49,12 +47,12 @@ export function Features() {
           <Image
             src={blobImage}
             alt="blob Image"
-            className="lg:w-[534px] lg:h-[522px] w-[80%] h-[455px] absolute -z-20 -bottom-110 -rotate-12 blur-3xl"
+            className="lg:w-[534px] lg:h-[522px] w-[80%] h-[80%px] absolute -z-20 lg:-bottom-110 -rotate-12 lg:blur-3xl blur-md"
           />
           <Image
             src={icons}
             alt="icons"
-            className="absolute -z-10 lg:transalte-y-[50%] translate-y-[3%] -bottom-110 max-w-[256px] max-h-[553px] lg:left-80 -rotate-180 "
+            className="absolute -z-10 lg:transalte-y-[50%] translate-y-[3%] lg:-bottom-110 lg:max-w-[256px] lg:max-h-[553px] lg:left-80 -rotate-180 "
           />
           <Image
             src={picture01}
@@ -69,7 +67,7 @@ export function Features() {
           <Image
             src={picture02}
             alt="picture two"
-            className="absolute -bottom-100 -z-10 "
+            className="absolute -bottom-100 -z-10 p-10 lg:p-0"
           />
           <Image
             src={picture03}
