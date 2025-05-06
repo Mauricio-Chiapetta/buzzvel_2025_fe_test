@@ -1,9 +1,10 @@
 "use client";
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { CircleArrowRight, CircleArrowLeft } from "lucide-react";
 import { DepoimentCard } from "../DepoimentCard";
 import { depoimentData } from "../data";
-
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 export function Depoiments() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -17,10 +18,26 @@ export function Depoiments() {
     }
   };
 
+   useLayoutEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".depoimentsTextReveal", {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".depoimentsItemsReveal",
+          start: "top 350px",
+          end: "bottom bottom",
+        },
+      });
+      return () => {
+        gsap.killTweensOf(".depoimentsTextReveal");
+      };
+    }, []);
+
   return (
     <section className="lg:px-20 lg:py-20 py-12 px-4 lg:max-h-[614px] flex flex-col lg:gap-20">
-      <div className="flex gap-12 items-center">
-        <h1 className="text-grayBlue lg:text-[56px] text-2xl font-bold w-[1112px]">
+      <div className="flex gap-12 items-center depoimentsItemsReveal">
+        <h1 className="text-grayBlue lg:text-[56px] text-2xl font-bold w-[1112px] depoimentsTextReveal opacity-0 -translate-x-[100px]">
           What everyone says
         </h1>
         <div className="lg:flex gap-6 hidden">

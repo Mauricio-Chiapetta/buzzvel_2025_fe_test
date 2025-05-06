@@ -1,3 +1,4 @@
+"use client";
 import vector from "@/app/assets/images/Vector-14.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,14 +10,26 @@ import icon04 from "@/app/assets/icons/heroIcon04.png";
 import icon05 from "@/app/assets/icons/heroIcon05.png";
 import teacherAndStudent from "@/app/assets/images/theacherAndStudent.png";
 import { Button } from "../Button";
+import { gsap } from "gsap";
+import { useLayoutEffect } from "react";
 
 export function Hero() {
+  useLayoutEffect(() => {
+    gsap.to(".title", {
+      x: 0,
+      opacity: 1,
+    });
+    return () => {
+      gsap.killTweensOf(".title");
+    };
+  }, []);
+
   return (
     <div className="sm:px-[80px] px-[16px]">
       <section className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-center">
         <div className="w-full  h-auto lg:h-[704.53px] py-10 lg:py-20">
           <div className="h-auto lg:h-[524px] w-full lg:w-[575.39px] relative">
-            <h1 className="text-grayBlue text-[40px] md:text-[36px] lg:text-[72px]/[110%] font-bold relative mb-6 lg:mb-8">
+            <h1 className="text-grayBlue text-[40px] md:text-[36px] lg:text-[72px]/[110%] font-bold relative mb-6 lg:mb-8 title opacity-0 -translate-x-[100px]">
               <span className="relative inline-block">
                 Teach
                 <Image
@@ -28,7 +41,7 @@ export function Hero() {
               students worldwide
             </h1>
 
-            <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[24px]/[160%] mb-6 lg:mb-8 mr-8 lg:mr-0">
+            <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[24px]/[160%] mb-6 lg:mb-8 mr-8 lg:mr-0 title opacity-0 -translate-x-[100px]">
               Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
               massa tincidunt viverra lectus pulvinar. Nunc ipsum est
               pellentesque turpis ultricies.

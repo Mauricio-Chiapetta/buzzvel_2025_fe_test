@@ -1,3 +1,4 @@
+"use client";
 import vector from "@/app/assets/images/Vector-14.png";
 import Image from "next/image";
 import picture01 from "@/app/assets/images/Picture01.png";
@@ -8,12 +9,42 @@ import blobImage from "@/app/assets/images/Blob.png";
 import icons from "@/app/assets/icons/Icons.png";
 import { CardComponent } from "../CardComponent";
 import { LinkButton } from "../Link-Button";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect } from "react";
 
 export function Features() {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".featuresTextReveal", {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".featuresItemsReveal",
+        start: "top 350px",
+        end: "bottom bottom",
+      },
+    });
+    gsap.to(".card", {
+      y: 0,
+      opacity: 1,
+      ease:"bounce",
+      scrollTrigger: {
+        trigger: ".featuresItemsReveal",
+        start: "top 350px",
+        end: "bottom bottom",
+      },
+    });
+    return () => {
+      gsap.killTweensOf(".featuresTextReveal");
+      gsap.killTweensOf(".card");
+    };
+  }, []);
+
   return (
     <section className="lg:p-20 gap-20 flex h-[639px] px-4 justify-center lg:flex-row flex-col">
-      <div className="flex flex-col lg:w-[600px] lg:gap-8 gap-6 w-[361px]">
-        <h1 className="lg:text-[56px] text-2xl text-grayBlue font-bold leading-[110%]">
+      <div className="flex flex-col lg:w-[600px] lg:gap-8 gap-6 w-[361px] featuresItemsReveal">
+        <h1 className="lg:text-[56px] text-2xl text-grayBlue font-bold leading-[110%] featuresTextReveal opacity-0 -translate-x-[100px]">
           All the cool{" "}
           <span className="relative inline-block">
             features
@@ -25,7 +56,7 @@ export function Features() {
           </span>
         </h1>
 
-        <p className="lg:text-[20px] lg:leading-[180%] text-grayBlue leading-[140%] text-[16px]">
+        <p className="lg:text-[20px] lg:leading-[180%] text-grayBlue leading-[140%] text-[16px] featuresTextReveal opacity-0 -translate-x-[110px]">
           Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac.
           In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque
           quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non
@@ -37,7 +68,7 @@ export function Features() {
 
       <div className="lg:w-[534px] w-[361px] lg:h-[522px] h-[421px]">
         <div className="relative w-full">
-          <div className="absolute z-30 lg:-bottom-40 lg:left-10 left-13 w-[70%] lg:w-[60%] -bottom-45">
+          <div className="absolute z-30 lg:-bottom-40 lg:left-10 left-13 w-[70%] lg:w-[60%] -bottom-45 -translate-y-90 opacity-0 card">
             <CardComponent
               badge="Popular"
               subtitle="Aliquam ut euismod condimentum elementum ultricies volutpat sit non. "

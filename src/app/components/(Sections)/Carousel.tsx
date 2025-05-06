@@ -6,7 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { CarouselContainer } from "../CarouselContainer";
+import { gsap } from "gsap";
 export function Slider() {
+  const handleSlideChange = () => {
+    const images = document.querySelectorAll(".carousel-image");
+
+    gsap.fromTo(
+      images,
+      { rotate: 180, opacity: 0, x: -100 },
+      { rotate: 0, opacity: 1, duration: 0.8, ease: "elastic.out", x: 0 }
+    );
+  };
   return (
     <div className="bg-yellow sm:px-[80px] px-[16px] lg:py-0 py-12 relative">
       <div className="absolute left-5 top-1/2 z-10 -translate-y-1/2 cursor-pointer swiper-button-prev-custom hidden lg:block">
@@ -17,6 +27,7 @@ export function Slider() {
       </div>
       <Swiper
         modules={[Navigation, Pagination]}
+        onSlideChange={handleSlideChange}
         spaceBetween={200}
         navigation={{
           nextEl: ".swiper-button-next-custom",

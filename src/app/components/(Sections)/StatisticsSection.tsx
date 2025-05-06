@@ -10,7 +10,7 @@ export function StatisticsSection() {
         <div className="flex flex-col items-center text-yellow gap-4 justify-center">
           <IoHeartCircle size={64} className="text-yellow" />
           <h1 className="text-7xl font-bold">
-            <CountUp duration={5} end={195} start={938} delay={5} />
+            <CountUp duration={5} end={195} start={938} delay={6} />
           </h1>
           <p className="text-2xl ">user countries</p>
         </div>
@@ -19,7 +19,7 @@ export function StatisticsSection() {
           <IoDiamond size={64} className="text-yellow" />
           <h1 className="text-7xl font-bold text-orange">
             <span className="text-yellow">
-              <CountUp end={1} start={123} duration={5} delay={5} />
+              <CountUp end={1} start={123} duration={5} delay={6} />
             </span>
             M
           </h1>

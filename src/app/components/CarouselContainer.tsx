@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Picture from "@/app/assets/images/CompletePicture.png";
-
 interface SliderContainerProps {
   paragraph: string;
   name: string;
@@ -20,7 +19,7 @@ export function CarouselContainer (props: SliderContainerProps) {
         </div>
       </div>
       <div className="lg:w-[528px] w-[361px]">
-        <Image width={528} src={Picture} alt="Picture" />
+        <Image width={528} src={Picture} alt="Picture" className="carousel-image"/>
       </div>
     </div>
   );
