@@ -14,7 +14,7 @@ export function Form() {
   return (
     <form
       onSubmit={handleForm}
-      className="flex flex-col justify-center gap-8 w-[550px]"
+      className="flex flex-col justify-center gap-8 lg:w-[550px] w-[361px]"
     >
       <div className="flex flex-col gap-5">
         <label htmlFor="Email" className="text-lg text-white font-normal">

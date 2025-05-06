@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/app/assets/images/Logo-colored.png";
+import logo from "@/app/assets/images/Logo.png";
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 

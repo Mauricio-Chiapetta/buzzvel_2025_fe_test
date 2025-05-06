@@ -8,6 +8,7 @@ import { Depoiments } from "./components/(Sections)/Depoiments";
 import { Features } from "./components/(Sections)/Features";
 import { Join } from "./components/(Sections)/Join";
 import { CTA } from "./components/(Sections)/CTA";
+import { Footer } from "./components/(Sections)/Footer";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
       <Features/>
       <Join/>
       <CTA/>
+      <Footer/>
     </>
   );
 }
