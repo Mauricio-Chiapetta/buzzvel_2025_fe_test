@@ -36,6 +36,7 @@ export function Hero() {
                   src={vector}
                   alt="Vector"
                   className="absolute lg:bottom-0 bottom-2  left-0 translate-y-[30%] -z-10"
+                  loading="lazy"
                 />
               </span>{" "}
               students worldwide
