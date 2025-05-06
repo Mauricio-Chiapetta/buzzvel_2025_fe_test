@@ -1,11 +1,7 @@
 import { FormEvent } from "react";
 import { Button } from "./Button";
-import { z } from "zod";
 
-const subscriptionSchema = z.object({
-  email: z.string().email("Enter a valid email!"),
-});
-type SubscriptionSchema = z.infer<typeof subscriptionSchema>;
+
 // install react hook form !! and make this form more professional.
 export function Form() {
   const handleForm = (ev: FormEvent) => {

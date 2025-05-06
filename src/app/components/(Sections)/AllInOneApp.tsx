@@ -1,5 +1,5 @@
 "use client";
-import { Check, ArrowRight } from "lucide-react";
+import { Check} from "lucide-react";
 import Image from "next/image";
 import vector from "@/app/assets/images/Vector-14.png";
 import icons from "@/app/assets/icons/Icons.png";

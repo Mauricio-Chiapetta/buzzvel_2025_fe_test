@@ -1,9 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { ComponentProps } from "react";
 
-interface LinkButton extends ComponentProps<"button"> {}
 
-export function LinkButton({ children,...props }: LinkButton) {
+
+export function LinkButton({ children,...props }: ComponentProps<"button">) {
   return (
     <button
       {...props}
