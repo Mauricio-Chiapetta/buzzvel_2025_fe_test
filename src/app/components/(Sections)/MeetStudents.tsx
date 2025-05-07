@@ -39,13 +39,13 @@ export function MeetStudents() {
 
             <div className="lg:w-[600px] lg:h-[388px] w-auto h-auto flex flex-col gap-8">
               <div className="relative w-full h-auto meetItemsReveal">
-                <h1 className="text-grayBlue text-[24px] md:text-[36px] lg:text-[56px]/[110%] font-bold meetTextReveal opacity-0 translate-x-[40px]">
+                <h1 className="text-grayBlue text-[24px] md:text-[36px] lg:text-[56px]/[110%] font-bold meetTextReveal opacity-0 lg:translate-x-[90px] translate-x-[5px]">
                   Meet international students & teachers
                   <PlaneTakeoff className="text-yellow absolute lg:top-[-40px] lg:right-31 top-[-12%] right-40 w-[24px] h-[24px] lg:w-[64px] lg:h-[64px]" />
                 </h1>
               </div>
 
-              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center meetTextReveal opacity-0 translate-x-[20px]">
+              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center meetTextReveal opacity-0 lg:translate-x-[30px] translate-x-[5px]"> 
                 Morbi sit egestas dignissim pharetra, sed amet. Tempus justo
                 senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam
                 facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus

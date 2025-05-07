@@ -71,6 +71,7 @@ export function Join() {
           src={roundImage}
           alt="round icons left"
           className="lg:w-full lg:h-full h-[360px] object-cover pointer-events-none"
+          loading="lazy"
         />
       </div>
 
@@ -93,6 +94,7 @@ export function Join() {
           src={roundImage02}
           alt="round icons right"
           className="lg:w-full lg:h-full h-[360px] object-cover pointer-events-none mt-30 lg:mt-0"
+          loading="lazy"
         />
       </div>
     </section>

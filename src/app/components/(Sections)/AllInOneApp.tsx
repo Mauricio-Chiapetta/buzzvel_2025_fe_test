@@ -72,17 +72,17 @@ export function AllInOneApp() {
             </h1>
 
             <div className="flex flex-col gap-2">
-              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center gap-2 textReveal opacity-0 -translate-x-[100px]">
+              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center gap-2 textReveal opacity-0 lg:-translate-x-[100px] -translate-x-[10px]">
                 <Check size={24} />
                 Est et in pharetra magna adipiscing ornare aliquam.
               </p>
 
-              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center gap-2 textReveal opacity-0 -translate-x-[120px]">
+              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%] flex items-center gap-2 textReveal opacity-0 lg:-translate-x-[120px] -translate-x-[10px]">
                 <Check size={24} />
                 Tellus arcu sed consequat ac velit ut eu blandit.
               </p>
 
-              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%]  lg:mb-8 mr-8 lg:mr-0 flex items-center gap-2 mb-10 textReveal opacity-0 -translate-x-[130px]">
+              <p className="font-normal text-grayBlue text-[16px] md:text-[16px] lg:text-[20px]/[160%]  lg:mb-8 mr-8 lg:mr-0 flex items-center gap-2 mb-10 textReveal opacity-0 lg:-translate-x-[130px] -translate-x-[10px]">
                 <Check size={24} />
                 Ullamcorper ornare in et egestas dolor orci.
               </p>
@@ -107,7 +107,7 @@ export function AllInOneApp() {
           <Image
             src={desktopImage}
             alt="App preview"
-            className="lg:z-10 z-0 -bottom-1 block lg:absolute translate-x-[80px] opacity-0 desktopImage"
+            className="lg:z-10 z-0 -bottom-1 block lg:absolute lg:translate-x-[80px] opacity-0 desktopImage"
           />
           <Image
             src={icons}
