@@ -77,7 +77,6 @@ export function Hero() {
             src={teacherAndStudent}
             alt="Teacher and Student"
             className="w-full h-auto object-contain"
-            loading="lazy"
           />
         </div>
       </section>
