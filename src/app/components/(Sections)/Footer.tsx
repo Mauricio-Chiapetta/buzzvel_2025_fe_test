@@ -73,7 +73,7 @@ export function Footer() {
 
       <div className="py-6 border-t-1 border-gray">
         <div className="flex lg:items-center justify-between flex-col lg:flex-row lg:gap-0 gap-6">
-          <p>uteach &copy; 2023. All rights reserved.</p>
+          <p>uteach &copy; {new Date().getFullYear()}. All rights reserved.</p>
           <div className="flex lg:gap-8 gap-8">
             <Link href={"#"}>
               <p>Terms</p>
