@@ -10,11 +10,10 @@ import { gsap } from "gsap";
 export function Slider() {
   const handleSlideChange = () => {
     const images = document.querySelectorAll(".carousel-image");
-
     gsap.fromTo(
       images,
-      { rotate: 180, opacity: 0, x: -100 },
-      { rotate: 0, opacity: 1, duration: 0.8, ease: "elastic.out", x: 0 }
+      { rotate: 180, opacity: 0,  },
+      { rotate: 0, opacity: 1, duration: 0.9, ease: "elastic.out",  }
     );
   };
   return (
