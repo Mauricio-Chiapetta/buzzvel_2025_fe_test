@@ -19,3 +19,13 @@
   .swiper-pagination-bullet-custom-active {
     @apply w-8 bg-grayBlue;
   }
+
+  html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconde o scrollbar no Firefox */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE e Edge antigos */
+}
